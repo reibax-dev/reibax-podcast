@@ -1,0 +1,22 @@
+
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+
+    
+.crea-grid {
+    @include m.tablet { 
+        @include m.grid(2, 2rem);
+        align-items: center;
+    }
+    h2 {
+        @include m.headingBorder (v.$secundario, v.$primario)
+    }
+    .crea-imagen {
+        transition-property: transform;
+        transition-duration: 1s;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+};

@@ -1,0 +1,16 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+
+.estadisticas h2 {
+    @include m.headingBorder (v.$secundario, v.$primario)
+};
+
+.esta-imagen {
+    transition-property: transform;
+    transition-duration: 1s;
+    &:hover {
+            transform: scale(1.05);
+        }
+    
+};
